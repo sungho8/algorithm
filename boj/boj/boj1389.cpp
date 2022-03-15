@@ -35,7 +35,7 @@ int main() {
 	int N, M;
 	int sum = 0, result = 0, min = 1e9;
 	cin >> N >> M;
-	
+
 
 	for (int i = 0; i < M; i++) {
 		int n1, n2;
@@ -45,9 +45,9 @@ int main() {
 	}
 
 	// 전부다 bfs를 돌린다
-	for (int i = 1; i <= N; i++) 
+	for (int i = 1; i <= N; i++)
 		bfs(i);
-	
+
 	for (int i = 1; i <= N; i++) {
 		sum = 0;
 		for (int j = 1; j <= N; j++) {
